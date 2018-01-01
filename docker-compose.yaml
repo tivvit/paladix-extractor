@@ -1,0 +1,7 @@
+version: '3'
+services:
+  extract:
+    build: .
+    volumes:
+    - "$PWD:/app/"
+    command: "python /app/extract.py"
